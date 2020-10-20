@@ -1,6 +1,6 @@
 FROM alpine/git AS clone
 WORKDIR /clone
-RUN git clone https://github.com/prueba-produ/spring-petclinic --single-branch -b ops
+RUN git clone https://github.com/prueba-produ/spring-petclinic --single-branch -b v1.0.0
 
 FROM maven:alpine AS build
 WORKDIR /build
