@@ -13,7 +13,7 @@ jobs:
       name: test
       run: |
         docker build -t test --no-cache .
-        docker run -d test
+        docker run -d -p 80:8080 test
         while true
           do
             sleep 1
